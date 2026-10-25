@@ -28,4 +28,4 @@ Kind: descriptive | Audience: 中文零基础学习者 | Purpose: 以音高顺�
 
 第二课使用 outputs/patterns/03-four-note-melody.orca 与 04-descending-melody.orca。终端源码验证 32 帧产生两遍 MIDI 60,62,64,67 或反向序列，间隔为 4 帧、velocity 63、duration 1。追踪器源文件为 scripts/trace_orca_notes.c。音频生成器为 scripts/render_lesson2_audio.py，共享 FluidSynth 渲染函数为 scripts/course_audio.py。四个音分别渲染，未通过移调一个样本冒充其他音高。
 
-第二课浏览器验证：四音样本成功解码并播放；选择 GEDC 后网格和四个选单一致，改末音为 G 后得到 GEDG。页面测试不代表学习者已掌握第二课。
+第二课浏览器验证：四音样本成功解码并播放；选择 GEDC 后网格和四个选单一致，改末音为 G 后得到 GEDG；正确答案的即时反馈已验证。页面测试不代表学习者已掌握第二课。

@@ -29,7 +29,8 @@ for (const root of document.querySelectorAll('[data-pulse-lab], [data-melody-lab
       root.querySelectorAll('[data-sequence]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.sequence === sequence)));
     }
     for (const btn of root.querySelectorAll('[data-rate]')) btn.setAttribute('aria-pressed', String(Number(btn.dataset.rate) === rate));
-    root.querySelector('[data-patch-rate]').textContent = String(rate);
+    const patchRate = root.querySelector('[data-patch-rate]');
+    if (patchRate) patchRate.textContent = String(rate);
   }
   function note(time, name) {
     const source = ctx.createBufferSource(), gain = ctx.createGain();
