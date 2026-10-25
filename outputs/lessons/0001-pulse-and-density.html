@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>01 · 让一个音成为循环 | Orca 创作课</title><link rel="stylesheet" href="../assets/course.css"><script src="../assets/course-sounds.js?saw-lead-1" defer></script><script src="../assets/pulse-lab.js?lesson-2" defer></script></head>
+<body><main>
+<nav><a href="#listen">先听一听</a><a href="#orca">在 Orca 中做</a><a href="../reference/0001-time-and-trigger.html">术语与速查</a></nav>
+<p class="eyebrow">ORCA / MUSIC FOR GAMES / LESSON 01</p>
+<h1>让一个音<br>成为循环。</h1>
+<p class="lede">做出两种疏密不同的声音，想象它们分别适合怎样的游戏场景。</p>
+<p class="meta">约 8 分钟 · 乐理与 Orca 零基础 · 本课成果：能发声，并能只改一个数字来改变音符密度</p>
+<div class="rule"></div>
+<section id="listen"><h2><span class="number">01</span>先听，再改</h2>
+<p>用手匀速轻拍桌面，口中数「1、2、3、4」。这四拍组成我们练习中的一个小节。BPM 表示每分钟有多少拍；这里固定为 90。<a href="#sources">[1]</a></p>
+<div class="panel lab" data-pulse-lab data-bpm="90">
+<div class="meta">试听对照 · Saw Lead 合成器 · 90 BPM</div>
+<div class="controls"><button type="button" class="primary" data-toggle aria-pressed="false">开始试听</button><button type="button" data-rate="4" aria-pressed="true">D4</button><button type="button" data-rate="2" aria-pressed="false">D2</button></div>
+<div class="frames" role="img" aria-label="四拍时间格，每拍四小格；绿色格表示发声位置，橙色边框表示播放位置"></div>
+<p class="legend">每四格是一拍，绿色格发声。试着保持手拍速度不变，再切到 D2。</p>
+<p class="feedback" data-status role="status" aria-live="polite">点击后才会发声。网页与终端使用同一套 GeneralUser GS 的 Saw Lead 音色。</p>
+<pre class="patch" aria-label="当前试听对应的 Orca 网格">.<span class="op">D<span data-patch-rate>4</span></span>.....
+........
+.<span class="op">:</span><span class="data">05C81</span>.</pre>
+</div>
+<p>在 Orca 的普通内部时钟下，一拍有 4 帧。这个例子中，<code>D4</code> 每 4 帧触发一次，<code>D2</code> 每 2 帧触发一次。因此它们分别在一小节里发声 4 次与 8 次。BPM 保持不变。<a href="#sources">[2, 3]</a></p>
+<p class="callout">把 D4 想象成角色平稳行走，把 D2 放进同一画面。你是否感到更忙、更紧张，或更机械？这是一次配乐判断练习，答案取决于画面与听感。</p>
+</section>
+<p class="meta">课程基础音色：Saw Lead（锯齿波合成器）。起音清楚，适合对照节奏；可延长音符或叠加多个音来练旋律与和弦。<a href="../assets/course-synth-preview.wav">试听一段旋律与和弦</a>。</p>
+<section id="orca"><h2><span class="number">02</span>在 Orca 中让它发声</h2>
+<p>本页使用本地安装的 <strong>终端 Orca</strong>。先保存你已有的作品。Orca 发送 MIDI 音符指令，实际声音由音源产生。<a href="#sources">[4]</a></p>
+<ol>
+<li>按 <kbd>Ctrl + S</kbd> 保存当前作品。按 <kbd>Ctrl + D</kbd> 或 <kbd>F1</kbd> 打开主菜单。</li>
+<li>选择 <strong>Open...</strong>，打开 <a href="../patterns/01-pulse.orca" download>01-pulse.orca</a>。本地路径为 <code>/home/cmd/Documents/Codex/2026-10-25/new-chat/outputs/patterns/01-pulse.orca</code>。</li>
+<li>再次打开主菜单，选择 <strong>Set BPM...</strong>，设为 <code>90</code>。<strong>.orca 网格文件本身不保存 BPM。</strong></li>
+<li>观察帧数是否增加；如果暂停，按空格开始。你应该听见同一个音均匀重复。空格也可暂停。</li>
+</ol>
+<p class="meta">也可以在新终端运行 <code>orca --bpm 90 /home/cmd/Documents/Codex/2026-10-25/new-chat/outputs/patterns/01-pulse.orca</code>。</p>
+<div class="split"><pre class="patch">.<span class="op">D4</span>.....
+........
+.<span class="op">:</span><span class="data">05C81</span>.</pre><div><p><code>D</code> 在下方一格生成短暂的 <code>*</code> 触发信号。第三行的 <code>:</code> 收到相邻信号后发送一个音符。<a href="#sources">[2]</a></p><p><strong>中间那行要留着。</strong><code>D</code> 与 <code>:</code> 必须在同一列，隔一行；<code>*</code> 会自动出现，不用手填。点号是空格位。</p><p class="meta">保留大写 D 和 C。终端版的 5C 对应 MIDI 60，与本页试听音高一致。这里的 C 是音名；其余参数可看<a href="../reference/0001-time-and-trigger.html#patch">速查表</a>，先不必背。</p></div></div>
+<details><summary>有闪动，但没有声音</summary><p>按 Ctrl + D 或 F1，选择 MIDI Output...，选中 FLUID Synth 对应的输出。Midi Through 是 MIDI 转发端口，本身不产生声音。</p><p>当前课程音源为 GeneralUser GS，基础音色为 Saw Lead。网页试听由同一 SoundFont、同一预置与效果设置生成，第一课的音高、力度和时值也与终端练习一致。</p><p>若仍无声，告诉聊天里的老师 MIDI Output 中的设备名，以及帧数是否变化。</p></details>
+</section>
+<section id="practice"><h2><span class="number">03</span>只改一个数字</h2>
+<p>先猜一猜：保持 <code>90 BPM</code> 与第三行不动，把 <code>D4</code> 改成 <code>D2</code>，会听见什么？</p>
+<div class="panel" data-quiz data-correct="dense" data-success="对。每拍的音符从 1 个变为 2 个，密度增加；BPM 与音高都没有变化。" data-retry="再想一次：改动的是触发间隔。D2 的等待帧数比 D4 少。先试听，再重新选择。">
+<div class="controls"><button type="button" data-answer="dense">声音更密</button><button type="button" data-answer="sparse">声音更疏</button><button type="button" data-answer="pitch">音高更高</button></div>
+<p class="feedback" data-feedback role="status" aria-live="polite">先作答，再去 Orca 验证。</p>
+</div>
+<p>暂停 Orca，点中 D 右侧的 4，输入 2，然后继续播放。对照手拍：每拍能否听到两个音？需要恢复时，把 2 改回 4；也可打开 <a href="../patterns/02-density.orca" download>02-density.orca</a> 对照。</p>
+<p>给两种版本各想一个游戏场景，并用一句话说明理由。例如「我选 ___ 给 ___，因为听起来 ___」。感受可以不同，但请准确说出你改了哪个参数。</p>
+</section>
+<section id="recall"><h2><span class="number">04</span>离开屏幕，回想一次</h2>
+<label class="check"><input type="checkbox">我在本地 Orca 中听见了重复的音。</label>
+<label class="check"><input type="checkbox">我能不看提示，预测 D4 改成 D2 的结果。</label>
+<label class="check"><input type="checkbox">我能说出自己更愿意把哪一种放进什么场景。</label>
+<p>下次练习前，先凭记忆回答：怎样让音符变密，同时保留相同的 BPM？再打开文件验证。这些勾选与页面答题不会自动发送到聊天。</p>
+<p>把你的实际听感告诉聊天里的老师；任何不清楚的地方都可以追问。确认这一步后，下一课再让音高变化，做第一个短旋律。</p>
+</section>
+<section id="sources" class="sources"><h2>本课来源</h2>
+<p>优先阅读：<a href="https://github.com/hundredrabbits/Orca/blob/main/README.md#operators">Orca 作者手册的 Operators</a>，只看 D、*、: 三项即可。</p>
+<ol><li><a href="https://openmusictheory.github.io/meter.html">Open Music Theory：拍的分组与细分</a>。</li><li><a href="https://github.com/hundredrabbits/Orca/blob/main/desktop/sources/scripts/core/library.js">Orca 官方运算符实现</a>：D 输出的位置与 MIDI 触发。</li><li><a href="https://github.com/hundredrabbits/Orca/blob/main/desktop/sources/scripts/clock.js">Orca 官方时钟实现</a>：每拍 4 帧。按 90 BPM 推导，一拍约 0.67 秒。</li><li><a href="https://github.com/hundredrabbits/Orca/blob/main/README.md#midi">Orca 官方手册：MIDI 与命令</a>。终端操作参见<a href="https://github.com/hundredrabbits/Orca-c#orca-livecoding-environment-controls">Orca-c 作者手册</a>。本地终端源码、启动脚本与菜单于 2026-10-25 核对。</li></ol>
+</section>
+<footer class="footer"><a href="0002-four-note-motif.html">下一课：四音动机</a> · 课程目标：原创音乐与游戏配乐 · <a href="../reference/0001-time-and-trigger.html">打开本课速查</a> · 可用浏览器打印或保存为 PDF</footer>
+</main></body></html>

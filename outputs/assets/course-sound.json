@@ -1,0 +1,34 @@
+{
+  "id": "generaluser-saw-lead",
+  "label": "柔和锯齿波合成器",
+  "soundfont": "GeneralUser-GS.sf2",
+  "bank": 0,
+  "program": 81,
+  "channel": 0,
+  "midi_note": 60,
+  "velocity": 63,
+  "bpm": 90,
+  "gate_frames": 1,
+  "sample_rate": 48000,
+  "gain": 0.6,
+  "settings": {
+    "synth.chorus.active": 0,
+    "synth.reverb.active": 1,
+    "synth.reverb.room-size": 0.3,
+    "synth.reverb.damp": 0.3,
+    "synth.reverb.width": 40.0,
+    "synth.reverb.level": 0.12
+  },
+  "preset_name": "Saw Lead",
+  "soundfont_sha256": "9575028c7a1f589f5770fccc8cff2734566af40cd26ed836944e9a5152688cfe",
+  "single_note_render": {
+    "preset": "Saw Lead",
+    "peak": 0.05304628238081932,
+    "duration": 1.8
+  },
+  "demo_render": {
+    "preset": "Saw Lead",
+    "peak": 0.0830545723438263,
+    "duration": 7
+  }
+}

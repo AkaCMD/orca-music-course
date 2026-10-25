@@ -1,0 +1,49 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>02 · 写下第一个四音动机 | Orca 创作课</title><link rel="stylesheet" href="../assets/course.css"><script src="../assets/melody-sounds.js" defer></script><script src="../assets/pulse-lab.js?lesson-2" defer></script></head><body><main>
+<nav><a href="0001-pulse-and-density.html">上一课</a><a href="#listen">试听与创作</a><a href="#orca">在终端中做</a><a href="../reference/0002-pitch-and-motif.html">本课速查</a></nav>
+<p class="eyebrow">ORCA / MUSIC FOR GAMES / LESSON 02</p><h1>写下第一个<br>四音动机。</h1>
+<p class="lede">保持每拍一个音，只改变音的高低与顺序，为角色发现一条新路写一个短小的音乐想法。</p><p class="meta">约 10 分钟 · 终端 Orca · Saw Lead · 成果：能修改并解释一个四音循环</p><div class="rule"></div>
+<section><h2><span class="number">01</span>从一个音到四个音</h2>
+<p>上一课改变音符的疏密。这一课保持 90 BPM、每拍一次发声，换成不同的音高。<strong>音高是声音的高低，音量是声音的大小。</strong></p>
+<p>我们先用同一音区的四个音：<code>C、D、E、G</code>，音高依次升高。本课把 C 当作 do，可以轻声唱成「do、re、mi、sol」。这四个音选自 C 大调；完整音阶以后再学。<a href="#sources">[1]</a></p>
+<p>这些音按时间先后连成旋律。这里把四拍的小片段作为一个<strong>动机</strong>：一段可以重复、改变、继续发展的短小音乐想法。<a href="#sources">[3]</a>先试着跟唱它，唱不准也可以用手势比出高低。</p>
+</section>
+<section id="listen"><h2><span class="number">02</span>听见旋律的方向</h2>
+<div class="panel lab" data-melody-lab data-bpm="90">
+<p class="meta">同一套 Saw Lead 音源 · 每拍一个音 · 四拍循环</p>
+<div class="controls"><button class="primary" type="button" data-toggle aria-pressed="false">开始试听</button><button type="button" data-sequence="CDEG" aria-pressed="true">C D E G</button><button type="button" data-sequence="GEDC" aria-pressed="false">G E D C</button></div>
+<div class="frames" role="img" aria-label="四拍时间格；每拍开始的字母表示所播放的音"></div>
+<p class="legend">切换两个版本，手仍匀速拍「1、2、3、4」。注意四音内部向上或向下的走向；循环接回开头时还会发生一次跳转。</p>
+<div class="note-editor" aria-label="编辑四个音">
+<label>第 1 拍<select data-note-select aria-label="第 1 拍的音"><option>C</option><option>D</option><option>E</option><option>G</option></select></label>
+<label>第 2 拍<select data-note-select aria-label="第 2 拍的音"><option>C</option><option>D</option><option>E</option><option>G</option></select></label>
+<label>第 3 拍<select data-note-select aria-label="第 3 拍的音"><option>C</option><option>D</option><option>E</option><option>G</option></select></label>
+<label>第 4 拍<select data-note-select aria-label="第 4 拍的音"><option>C</option><option>D</option><option>E</option><option>G</option></select></label></div>
+<p class="feedback" data-status role="status" aria-live="polite">点击后试听。可用上方选单写出自己的四个音，下方网格会同步更新。</p>
+<pre class="patch" aria-label="当前四音循环的 Orca 网格">...<span class="op">4C4</span>..........
+..<span class="op">D4</span>04<span class="op">T</span><span class="data" data-patch-sequence>CDEG</span>.....
+...<span class="op">:</span><span class="data">05C81</span>.......</pre>
+</div>
+<p class="callout">想象角色走近一扇刚打开的门。你更愿意用哪一个版本？说出听感与画面的联系。上行和下行都可以服务不同情绪，先比较，不给它们固定贴上「开心」或「悲伤」的标签。</p>
+</section>
+<section id="orca"><h2><span class="number">03</span>在终端中播放四音循环</h2>
+<ol><li>先按 <kbd>Ctrl + S</kbd> 保存当前作品。按 <kbd>Ctrl + D</kbd> 或 <kbd>F1</kbd>，选择 <strong>Open...</strong>，打开 <a href="../patterns/03-four-note-melody.orca" download>03-four-note-melody.orca</a>。</li>
+<li>在同一主菜单选择 <strong>Set BPM...</strong>，设为 90。按 <kbd>Ctrl + R</kbd> 将帧数归零，用空格播放或暂停。应听到 <code>C、D、E、G</code> 反复出现，每拍一个音。</li>
+<li>暂停，<strong>只改 T 右侧的四个字母</strong>，把 <code>CDEG</code> 改成 <code>GEDC</code>。再播放，对照网页试听。</li></ol>
+<p class="meta">新位置：<code>/home/cmd/git-repos/orca-music-course/outputs/patterns/03-four-note-melody.orca</code>。也可在新终端运行 <code>orca --bpm 90 文件路径</code>。</p>
+<p>网格中的 <code>4C4</code> 提供每拍推进一次的 <code>0、1、2、3</code> 计数，<code>T</code> 据此依次选取右侧四个音，把当前音名送到下方 MIDI 音名格。<code>D4</code> 负责每拍触发一次。<a href="#sources">[2]</a></p>
+<p><strong>第三行的音名会自动更新，请改 T 后面的音符表。</strong>本课先使用这套播放结构，不要求凭记忆重建计数器。可打开<a href="../patterns/04-descending-melody.orca" download>下行版文件</a>核对；网格位置与大小写都要保留。</p>
+<details><summary>音名 C 与运算符 C 的区别</summary><p>第一行的 C 位于运算位置，是 Clock，负责计数。T 右侧的 C 是音符表中的数据，MIDI 音名格里的 C 表示 C 音。Orca 根据它的位置与端口用途解释字符。<a href="#sources">[2]</a></p></details>
+</section>
+<section><h2><span class="number">04</span>先预测，再验证</h2>
+<p>从 <code>CDEG</code> 改为 <code>GEDC</code>，保持所有数字不动。直接改变的是哪一项？</p>
+<div class="panel" data-quiz data-correct="pitch" data-success="对。音高的先后顺序改变了，四音内部由上行变成下行。每拍一个音、90 BPM 和 Saw Lead 音色都保留。" data-retry="再看改动：只有四个音名的排列变了。数字和音源设置没有变，试着跟唱两个版本。"><div class="controls"><button type="button" data-answer="rhythm">节奏改变</button><button type="button" data-answer="pitch">音高改变</button><button type="button" data-answer="tone">音色改变</button></div><p class="feedback" data-feedback role="status" aria-live="polite">选择后会即时反馈。</p></div>
+<p>现在写一个自己的四音动机，每格从 C、D、E、G 中选一个，允许重复。先用手势预测走向，再试听，最后把同样四个字母写进 Orca。给它起一个与游戏画面有关的名字，并保存为新文件。</p>
+<p>再只改最后一个音，听它怎样接回第一个音。无需把它做成一整首曲子；这一课的成果就是一个能控制、能解释的四音循环。</p>
+</section>
+<section><h2><span class="number">05</span>带回聊天的一句话</h2>
+<p>「我的四个音是 ____，我想把它放在 ____ 的场景，因为 ____。」也说说：你最后改的是哪一个音，听起来有什么变化？可以把不清楚的地方直接问老师。</p>
+<p>下次先凭记忆说出自己的四个音，再打开文件核对。如果记得住，试着轻声哼一遍；下一课再用重复与变化，把短动机发展成更长的乐句。</p>
+</section>
+<section id="sources" class="sources"><h2>本课来源</h2><p>推荐先读 <a href="https://openmusictheory.github.io/scales.html">Open Music Theory：Scales and scale degrees</a> 的开头与 major scale 部分，只对照音名和由低到高的排列，不必背全章。</p><ol><li><a href="https://openmusictheory.github.io/scales.html">Open Music Theory：音阶与音级</a>。本课选用同一音区的 C、D、E、G，不展开大小调理论。</li><li><a href="https://github.com/hundredrabbits/Orca-c/blob/master/sim.c">Orca-c 运算符实现</a>中的 clock、delay、track 与 midi。本地终端引擎验证了每 4 帧按四音顺序输出 MIDI 60、62、64、67；网格与音源配置于 2026-10-25 核对。</li><li><a href="https://musictheory.pugetsound.edu/mt21c/MotiveSection.html">Robert Hutchinson：Motive</a>，University of Puget Sound 乐理教材，用于核对动机的定义与重复、变化。</li></ol></section>
+<footer class="footer"><a href="0001-pulse-and-density.html">回看第一课</a> · <a href="../reference/0002-pitch-and-motif.html">音高与四音循环速查</a> · <a href="../index.html">课程目录</a></footer>
+</main></body></html>

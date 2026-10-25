@@ -1,0 +1,22 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>拍子与触发速查 | Orca 创作课</title><link rel="stylesheet" href="../assets/course.css"></head><body><main>
+<nav><a href="../lessons/0001-pulse-and-density.html">回到第一课</a></nav><p class="eyebrow">ORCA / REFERENCE 01</p><h1>拍子与触发</h1><p class="lede">先查词，再回到声音里验证。</p>
+<section id="terms"><h2>本课词汇</h2><table class="terms"><thead><tr><th>词</th><th>含义</th><th>本课用法</th></tr></thead><tbody>
+<tr><td>拍（beat）</td><td>用来匀速计数的时间单位</td><td>手拍「1、2、3、4」</td></tr>
+<tr><td>速度（tempo / BPM）</td><td>这里以每分钟的拍数表示</td><td>90 BPM</td></tr>
+<tr><td>小节（bar）</td><td>按拍的分组划出的单位</td><td>练习约定四拍一组</td></tr>
+<tr><td>音符密度</td><td>这里指单位时间内发声的次数</td><td>相同 BPM 下，D2 比 D4 密</td></tr>
+<tr><td>帧（frame）</td><td>Orca 的一次计算步进</td><td>普通内部时钟下每拍 4 帧</td></tr>
+<tr><td>触发（bang）</td><td>Orca 中用 * 表示的信号</td><td>激活相邻的 MIDI 运算符</td></tr>
+</tbody></table><p class="sources">乐理术语依据 <a href="https://openmusictheory.github.io/meter.html">Open Music Theory</a>；Orca 术语依据<a href="https://github.com/hundredrabbits/Orca/blob/main/README.md">作者手册</a>与<a href="https://github.com/hundredrabbits/Orca/blob/main/desktop/sources/scripts/clock.js">时钟实现</a>。</p></section>
+<section id="patch"><h2>最小可听网格</h2><pre class="patch">.D4.....
+........
+.:05C81.</pre><p><code>D4</code> 左边为空时，本例每 4 帧触发一次。第二行接收自动生成的 <code>*</code>，第三行的 <code>:</code> 发送 MIDI。保持三行与列对齐。</p>
+<table class="terms"><thead><tr><th>: 后的位置</th><th>本例值</th><th>作用</th></tr></thead><tbody>
+<tr><td>1</td><td>0</td><td>MIDI 通道编号 0，对应通常称呼的第 1 通道</td></tr>
+<tr><td>2</td><td>5</td><td>终端版的音区编号；5C 对应 MIDI 60</td></tr>
+<tr><td>3</td><td>C</td><td>音名 C；此处保持大写</td></tr>
+<tr><td>4</td><td>8</td><td>力度，影响音源的响度或音色反应</td></tr>
+<tr><td>5</td><td>1</td><td>保持音符的帧数；音源可能仍有释放尾音</td></tr>
+</tbody></table><p class="sources">参数与端口来源：<a href="https://github.com/hundredrabbits/Orca/blob/main/README.md#midi">官方 MIDI 说明</a>与<a href="https://github.com/hundredrabbits/Orca/blob/main/desktop/sources/scripts/core/library.js">运算符实现</a>。</p></section>
+<section><h2>终端版常用操作</h2><p><kbd>Ctrl + D</kbd> 或 <kbd>F1</kbd> 打开主菜单。在 Open... 打开网格，在 Set BPM... 设置速度，在 MIDI Output... 选择音源。空格播放或暂停，<kbd>Ctrl + S</kbd> 保存。</p><p>.orca 网格不包含 BPM 设置。本课使用 90 BPM，也可以启动时传入 <code>orca --bpm 90 文件路径</code>。</p><p>课程音源为 GeneralUser GS，通道 0 的基础音色为 Saw Lead（程序编号 81，bank 0）。网页试听由同一音源和设置生成。<a href="../assets/course-synth-preview.wav">试听音色</a>。</p><p class="sources">依据<a href="https://github.com/hundredrabbits/Orca-c#orca-livecoding-environment-controls">终端版作者手册</a>与本地 tui_main.c，菜单及音高映射于 2026-10-25 核对。</p></section>
+<footer class="footer"><a href="../lessons/0001-pulse-and-density.html#practice">回第一课做练习</a></footer></main></body></html>

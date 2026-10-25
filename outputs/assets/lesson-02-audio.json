@@ -1,0 +1,35 @@
+{
+  "profile": "course-sound.json",
+  "renders": {
+    "C": {
+      "preset": "Saw Lead",
+      "peak": 0.05304628238081932,
+      "duration": 1.8
+    },
+    "D": {
+      "preset": "Saw Lead",
+      "peak": 0.051295556128025055,
+      "duration": 1.8
+    },
+    "E": {
+      "preset": "Saw Lead",
+      "peak": 0.04853816330432892,
+      "duration": 1.8
+    },
+    "G": {
+      "preset": "Saw Lead",
+      "peak": 0.047330159693956375,
+      "duration": 1.8
+    },
+    "ascending": {
+      "preset": "Saw Lead",
+      "peak": 0.05304628238081932,
+      "duration": 6.8
+    },
+    "descending": {
+      "preset": "Saw Lead",
+      "peak": 0.052997708320617676,
+      "duration": 6.8
+    }
+  }
+}

@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.DS_Store
+work/
+outputs/lesson-preview.png
+outputs/assets/Orca-Tutorial-Triangle.sf2
+outputs/assets/terminal-triangle-preview.wav
