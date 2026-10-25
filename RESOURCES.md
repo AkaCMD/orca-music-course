@@ -30,8 +30,25 @@
 - [Orca 官方仓库讨论入口](https://github.com/hundredrabbits/Orca#orca)
   作者列出的论坛、聊天室与邮件列表入口。适合日后展示一个短循环并征求具体反馈；目前不要求加入。
 
-## Gaps
+## 完整课程追加资料
 
-- 尚未确定用户喜欢的游戏、作曲家与目标场景。
-- 尚需为后续音高、和声与游戏音频导出课程补充相应的一手教材。
-- 作者网站 https://100r.co/site/orca.html 被本次网页工具的 robots 访问规则阻止；使用作者的官方 GitHub 资料交叉核对。
+- [Open Music Theory：时值与休止](https://openmusictheory.github.io/rhythmicValues.html)
+  第 3 课的持续时间与休止概念。
+- [Open Music Theory：音高与音区](https://openmusictheory.github.io/pitches.html)
+  第 4 课的音区与常见科学音高记法，代码映射另按终端源码核对。
+- [Open Music Theory：音程](https://openmusictheory.github.io/intervals.html)
+  半音计数与音程的级数、性质。
+- [Open Music Theory：三和弦](https://openmusictheory.github.io/triads.html)
+  第 6、7 课的和弦构成。
+- [Open Music Theory：和声功能](https://openmusictheory.github.io/harmonicFunctions.html)
+  理解调性语境中的和声位置，避免把某一进行当成通用情绪公式。
+- [Ableton Learning Synths：包络](https://learningsynths.ableton.com/en/envelopes/synthesizer-envelopes)
+  第 3、9 课的起音、保持与释放，亦可作为课后音色设计练习。网页需要 JavaScript。
+- [Audiokinetic：互动音乐中的水平与垂直结构](https://www.audiokinetic.com/download/documents/customer_profiles/MGR_Wwise_BGM_en.pdf)
+  游戏状态配乐的组织思路。搜索索引可核对两种结构，本文档下载在本次网页工具中返回 403；课程的具体切换行为以本地实现和测试为准。
+- [Godot 官方文档：音频导入与循环](https://docs.godotengine.org/en/stable/tutorials/assets_pipeline/importing_audio_samples.html)
+  第 11、12 课的 WAV 循环导入，可作引擎侧示例；其他引擎需要查其各自文档。
+
+## 仍需学习者补充的背景
+
+具体游戏与参考音乐尚未指定；完整课程使用“旧城高架花园”作示范。后续作品评审应以学习者选择的画面与用途为准。

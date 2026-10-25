@@ -1,0 +1,45 @@
+{
+  "title": "旧城高架花园",
+  "bpm": 90,
+  "beats_per_bar": 4,
+  "bars": 8,
+  "key": "C major",
+  "sample_rate": 48000,
+  "sample_frames": 1024000,
+  "transition": "next bar, 40 ms fade",
+  "soundfont": "GeneralUser-GS.sf2",
+  "states": {
+    "final-calm": {
+      "audio": "../../audio/12-final-calm.wav",
+      "pattern": "../../patterns/12-final-calm.orca",
+      "report": {
+        "preset": "Saw Lead",
+        "peak": 0.039276123046875,
+        "duration": 21.333333333333332,
+        "sample_rate": 48000,
+        "frames": 1024000,
+        "boundary_jump": 3.0517578125e-05,
+        "pre_roll_cycles": 2,
+        "pattern": "12-final-calm.orca",
+        "midi_events": 64,
+        "cycle_frames": 128
+      }
+    },
+    "final-battle": {
+      "audio": "../../audio/12-final-battle.wav",
+      "pattern": "../../patterns/12-final-battle.orca",
+      "report": {
+        "preset": "Saw Lead",
+        "peak": 0.125274658203125,
+        "duration": 21.333333333333332,
+        "sample_rate": 48000,
+        "frames": 1024000,
+        "boundary_jump": 3.0517578125e-05,
+        "pre_roll_cycles": 2,
+        "pattern": "12-final-battle.orca",
+        "midi_events": 176,
+        "cycle_frames": 128
+      }
+    }
+  }
+}

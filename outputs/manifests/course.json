@@ -1,0 +1,1128 @@
+{
+  "bpm": 90,
+  "beats_per_bar": 4,
+  "sample_rate": 48000,
+  "source_profile": "../assets/course-sound.json",
+  "lessons": [
+    {
+      "number": 3,
+      "title": "让旋律留出呼吸",
+      "page": "lessons/0003-rhythm-and-space.html",
+      "variants": [
+        {
+          "title": "留白",
+          "id": "rests",
+          "tracks": [
+            {
+              "notes": "C.D.G.E.",
+              "step": 4,
+              "octave": 5,
+              "velocity": 6,
+              "gate": 1,
+              "channel": 0,
+              "label": "LEAD",
+              "field": "note"
+            }
+          ],
+          "frames": 32,
+          "loop": false,
+          "pattern": "03-rests.orca",
+          "audio": "03-rests.wav",
+          "report": {
+            "preset": "Saw Lead",
+            "peak": 0.031646728515625,
+            "duration": 6.833333333333333,
+            "sample_rate": 48000,
+            "frames": 328000,
+            "pattern": "03-rests.orca",
+            "midi_events": 4,
+            "cycle_frames": 32
+          }
+        },
+        {
+          "title": "力度",
+          "id": "accents",
+          "tracks": [
+            {
+              "notes": "85a585a5",
+              "step": 4,
+              "octave": 5,
+              "velocity": 6,
+              "gate": 1,
+              "channel": 0,
+              "label": "ACCENTS",
+              "field": "velocity"
+            }
+          ],
+          "frames": 32,
+          "loop": false,
+          "pattern": "03-accents.orca",
+          "audio": "03-accents.wav",
+          "report": {
+            "preset": "Saw Lead",
+            "peak": 0.078765869140625,
+            "duration": 6.833333333333333,
+            "sample_rate": 48000,
+            "frames": 328000,
+            "pattern": "03-accents.orca",
+            "midi_events": 8,
+            "cycle_frames": 32
+          }
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "听出距离，而不只记音名",
+      "page": "lessons/0004-intervals-and-octaves.html",
+      "variants": [
+        {
+          "title": "逐组比较",
+          "id": "intervals",
+          "tracks": [
+            {
+              "notes": "CDCECGCJ",
+              "step": 4,
+              "octave": 5,
+              "velocity": 6,
+              "gate": 1,
+              "channel": 0,
+              "label": "LEAD",
+              "field": "note"
+            }
+          ],
+          "frames": 32,
+          "loop": false,
+          "pattern": "04-intervals.orca",
+          "audio": "04-intervals.wav",
+          "report": {
+            "preset": "Saw Lead",
+            "peak": 0.03167724609375,
+            "duration": 6.833333333333333,
+            "sample_rate": 48000,
+            "frames": 328000,
+            "pattern": "04-intervals.orca",
+            "midi_events": 8,
+            "cycle_frames": 32
+          }
+        },
+        {
+          "title": "八度跳进",
+          "id": "octaves",
+          "tracks": [
+            {
+              "notes": "CJCJCJCJ",
+              "step": 4,
+              "octave": 5,
+              "velocity": 6,
+              "gate": 1,
+              "channel": 0,
+              "label": "LEAD",
+              "field": "note"
+            }
+          ],
+          "frames": 32,
+          "loop": false,
+          "pattern": "04-octaves.orca",
+          "audio": "04-octaves.wav",
+          "report": {
+            "preset": "Saw Lead",
+            "peak": 0.03167724609375,
+            "duration": 6.833333333333333,
+            "sample_rate": 48000,
+            "frames": 328000,
+            "pattern": "04-octaves.orca",
+            "midi_events": 8,
+            "cycle_frames": 32
+          }
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "给旋律选择一套音",
+      "page": "lessons/0005-major-and-minor.html",
+      "variants": [
+        {
+          "title": "C 大调",
+          "id": "major",
+          "tracks": [
+            {
+              "notes": "CDEFGABJ",
+              "step": 4,
+              "octave": 5,
+              "velocity": 6,
+              "gate": 1,
+              "channel": 0,
+              "label": "LEAD",
+              "field": "note"
+            }
+          ],
+          "frames": 32,
+          "loop": false,
+          "pattern": "05-major.orca",
+          "audio": "05-major.wav",
+          "report": {
+            "preset": "Saw Lead",
+            "peak": 0.031646728515625,
+            "duration": 6.833333333333333,
+            "sample_rate": 48000,
+            "frames": 328000,
+            "pattern": "05-major.orca",
+            "midi_events": 8,
+            "cycle_frames": 32
+          }
+        },
+        {
+          "title": "C 自然小调",
+          "id": "minor",
+          "tracks": [
+            {
+              "notes": "CDdFGgaJ",
+              "step": 4,
+              "octave": 5,
+              "velocity": 6,
+              "gate": 1,
+              "channel": 0,
+              "label": "LEAD",
+              "field": "note"
+            }
+          ],
+          "frames": 32,
+          "loop": false,
+          "pattern": "05-minor.orca",
+          "audio": "05-minor.wav",
+          "report": {
+            "preset": "Saw Lead",
+            "peak": 0.031646728515625,
+            "duration": 6.833333333333333,
+            "sample_rate": 48000,
+            "frames": 328000,
+            "pattern": "05-minor.orca",
+            "midi_events": 8,
+            "cycle_frames": 32
+          }
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "title": "让三个音同时说话",
+      "page": "lessons/0006-building-triads.html",
+      "variants": [
+        {
+          "title": "C 大三和弦",
+          "id": "major-chord",
+          "tracks": [
+            {
+              "notes": "C",
+              "step": 16,
+              "octave": 4,
+              "velocity": 4,
+              "gate": 12,
+              "channel": 0,
+              "label": "ROOT",
+              "field": "note"
+            },
+            {
+              "notes": "E",
+              "step": 16,
+              "octave": 4,
+              "velocity": 4,
+              "gate": 12,
+              "channel": 0,
+              "label": "THIRD",
+              "field": "note"
+            },
+            {
+              "notes": "G",
+              "step": 16,
+              "octave": 4,
+              "velocity": 4,
+              "gate": 12,
+              "channel": 0,
+              "label": "FIFTH",
+              "field": "note"
+            }
+          ],
+          "frames": 32,
+          "loop": false,
+          "pattern": "06-major-chord.orca",
+          "audio": "06-major-chord.wav",
+          "report": {
+            "preset": "Saw Lead",
+            "peak": 0.03216552734375,
+            "duration": 6.833333333333333,
+            "sample_rate": 48000,
+            "frames": 328000,
+            "pattern": "06-major-chord.orca",
+            "midi_events": 6,
+            "cycle_frames": 32
+          }
+        },
+        {
+          "title": "C 小三和弦",
+          "id": "minor-chord",
+          "tracks": [
+            {
+              "notes": "C",
+              "step": 16,
+              "octave": 4,
+              "velocity": 4,
+              "gate": 12,
+              "channel": 0,
+              "label": "ROOT",
+              "field": "note"
+            },
+            {
+              "notes": "d",
+              "step": 16,
+              "octave": 4,
+              "velocity": 4,
+              "gate": 12,
+              "channel": 0,
+              "label": "THIRD",
+              "field": "note"
+            },
+            {
+              "notes": "G",
+              "step": 16,
+              "octave": 4,
+              "velocity": 4,
+              "gate": 12,
+              "channel": 0,
+              "label": "FIFTH",
+              "field": "note"
+            }
+          ],
+          "frames": 32,
+          "loop": false,
+          "pattern": "06-minor-chord.orca",
+          "audio": "06-minor-chord.wav",
+          "report": {
+            "preset": "Saw Lead",
+            "peak": 0.032196044921875,
+            "duration": 6.833333333333333,
+            "sample_rate": 48000,
+            "frames": 328000,
+            "pattern": "06-minor-chord.orca",
+            "midi_events": 6,
+            "cycle_frames": 32
+          }
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "title": "用和弦推进四个小节",
+      "page": "lessons/0007-harmony-and-bass.html",
+      "variants": [
+        {
+          "title": "C Am F G",
+          "id": "progression",
+          "tracks": [
+            {
+              "notes": "JAMN",
+              "step": 16,
+              "octave": 2,
+              "velocity": 4,
+              "gate": 10,
+              "channel": 0,
+              "label": "BASS",
+              "field": "note"
+            },
+            {
+              "notes": "JAMN",
+              "step": 16,
+              "octave": 3,
+              "velocity": 3,
+              "gate": 12,
+              "channel": 0,
+              "label": "ROOT",
+              "field": "note"
+            },
+            {
+              "notes": "ECAB",
+              "step": 16,
+              "octave": 4,
+              "velocity": 3,
+              "gate": 12,
+              "channel": 0,
+              "label": "THIRD",
+              "field": "note"
+            },
+            {
+              "notes": "GEJK",
+              "step": 16,
+              "octave": 4,
+              "velocity": 3,
+              "gate": 12,
+              "channel": 0,
+              "label": "FIFTH",
+              "field": "note"
+            }
+          ],
+          "frames": 64,
+          "loop": false,
+          "pattern": "07-progression.orca",
+          "audio": "07-progression.wav",
+          "report": {
+            "preset": "Saw Lead",
+            "peak": 0.025787353515625,
+            "duration": 12.166666666666666,
+            "sample_rate": 48000,
+            "frames": 584000,
+            "pattern": "07-progression.orca",
+            "midi_events": 16,
+            "cycle_frames": 64
+          }
+        },
+        {
+          "title": "C F Am G",
+          "id": "reordered",
+          "tracks": [
+            {
+              "notes": "JMAN",
+              "step": 16,
+              "octave": 2,
+              "velocity": 4,
+              "gate": 10,
+              "channel": 0,
+              "label": "BASS",
+              "field": "note"
+            },
+            {
+              "notes": "JMAN",
+              "step": 16,
+              "octave": 3,
+              "velocity": 3,
+              "gate": 12,
+              "channel": 0,
+              "label": "ROOT",
+              "field": "note"
+            },
+            {
+              "notes": "EACB",
+              "step": 16,
+              "octave": 4,
+              "velocity": 3,
+              "gate": 12,
+              "channel": 0,
+              "label": "THIRD",
+              "field": "note"
+            },
+            {
+              "notes": "GJEK",
+              "step": 16,
+              "octave": 4,
+              "velocity": 3,
+              "gate": 12,
+              "channel": 0,
+              "label": "FIFTH",
+              "field": "note"
+            }
+          ],
+          "frames": 64,
+          "loop": false,
+          "pattern": "07-reordered.orca",
+          "audio": "07-reordered.wav",
+          "report": {
+            "preset": "Saw Lead",
+            "peak": 0.025787353515625,
+            "duration": 12.166666666666666,
+            "sample_rate": 48000,
+            "frames": 584000,
+            "pattern": "07-reordered.orca",
+            "midi_events": 16,
+            "cycle_frames": 64
+          }
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "title": "把短动机发展成乐句",
+      "page": "lessons/0008-phrases-and-variation.html",
+      "variants": [
+        {
+          "title": "A A B A",
+          "id": "phrase",
+          "tracks": [
+            {
+              "notes": "CDEGCDEGEGGJCDEG",
+              "step": 4,
+              "octave": 5,
+              "velocity": 6,
+              "gate": 1,
+              "channel": 0,
+              "label": "LEAD",
+              "field": "note"
+            }
+          ],
+          "frames": 64,
+          "loop": false,
+          "pattern": "08-phrase.orca",
+          "audio": "08-phrase.wav",
+          "report": {
+            "preset": "Saw Lead",
+            "peak": 0.03167724609375,
+            "duration": 12.166666666666666,
+            "sample_rate": 48000,
+            "frames": 584000,
+            "pattern": "08-phrase.orca",
+            "midi_events": 16,
+            "cycle_frames": 64
+          }
+        },
+        {
+          "title": "A B A C",
+          "id": "phrase-variant",
+          "tracks": [
+            {
+              "notes": "CDEGEGGJCDEGGEDC",
+              "step": 4,
+              "octave": 5,
+              "velocity": 6,
+              "gate": 1,
+              "channel": 0,
+              "label": "LEAD",
+              "field": "note"
+            }
+          ],
+          "frames": 64,
+          "loop": false,
+          "pattern": "08-phrase-variant.orca",
+          "audio": "08-phrase-variant.wav",
+          "report": {
+            "preset": "Saw Lead",
+            "peak": 0.03167724609375,
+            "duration": 12.166666666666666,
+            "sample_rate": 48000,
+            "frames": 584000,
+            "pattern": "08-phrase-variant.orca",
+            "midi_events": 16,
+            "cycle_frames": 64
+          }
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "title": "给旋律安排前景与背景",
+      "page": "lessons/0009-register-and-arrangement.html",
+      "variants": [
+        {
+          "title": "仅旋律",
+          "id": "lead-only",
+          "tracks": [
+            {
+              "notes": "CDEGCDEGEGGJCDEG",
+              "step": 4,
+              "octave": 6,
+              "velocity": 5,
+              "gate": 2,
+              "channel": 0,
+              "label": "LEAD",
+              "field": "note"
+            }
+          ],
+          "frames": 64,
+          "loop": false,
+          "pattern": "09-lead-only.orca",
+          "audio": "09-lead-only.wav",
+          "report": {
+            "preset": "Saw Lead",
+            "peak": 0.02191162109375,
+            "duration": 12.166666666666666,
+            "sample_rate": 48000,
+            "frames": 584000,
+            "pattern": "09-lead-only.orca",
+            "midi_events": 16,
+            "cycle_frames": 64
+          }
+        },
+        {
+          "title": "旋律与背景",
+          "id": "arranged",
+          "tracks": [
+            {
+              "notes": "CDEGCDEGEGGJCDEG",
+              "step": 4,
+              "octave": 6,
+              "velocity": 5,
+              "gate": 2,
+              "channel": 0,
+              "label": "LEAD",
+              "field": "note"
+            },
+            {
+              "notes": "JAMN",
+              "step": 16,
+              "octave": 2,
+              "velocity": 4,
+              "gate": 10,
+              "channel": 0,
+              "label": "BASS",
+              "field": "note"
+            },
+            {
+              "notes": "JAMN",
+              "step": 16,
+              "octave": 3,
+              "velocity": 3,
+              "gate": 12,
+              "channel": 0,
+              "label": "ROOT",
+              "field": "note"
+            },
+            {
+              "notes": "ECAB",
+              "step": 16,
+              "octave": 4,
+              "velocity": 3,
+              "gate": 12,
+              "channel": 0,
+              "label": "THIRD",
+              "field": "note"
+            },
+            {
+              "notes": "GEJK",
+              "step": 16,
+              "octave": 4,
+              "velocity": 3,
+              "gate": 12,
+              "channel": 0,
+              "label": "FIFTH",
+              "field": "note"
+            }
+          ],
+          "frames": 64,
+          "loop": false,
+          "pattern": "09-arranged.orca",
+          "audio": "09-arranged.wav",
+          "report": {
+            "preset": "Saw Lead",
+            "peak": 0.03961181640625,
+            "duration": 12.166666666666666,
+            "sample_rate": 48000,
+            "frames": 584000,
+            "pattern": "09-arranged.orca",
+            "midi_events": 32,
+            "cycle_frames": 64
+          }
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "title": "让音乐响应游戏状态",
+      "page": "lessons/0010-music-and-game-states.html",
+      "variants": [
+        {
+          "title": "探索",
+          "id": "calm",
+          "tracks": [
+            {
+              "notes": "CDEGCDEGEGGJCDEG",
+              "step": 4,
+              "octave": 6,
+              "velocity": 5,
+              "gate": 2,
+              "channel": 0,
+              "label": "LEAD",
+              "field": "note"
+            },
+            {
+              "notes": "JAMN",
+              "step": 16,
+              "octave": 2,
+              "velocity": 4,
+              "gate": 10,
+              "channel": 0,
+              "label": "BASS",
+              "field": "note"
+            },
+            {
+              "notes": "JAMN",
+              "step": 16,
+              "octave": 3,
+              "velocity": 3,
+              "gate": 12,
+              "channel": 0,
+              "label": "ROOT",
+              "field": "note"
+            },
+            {
+              "notes": "ECAB",
+              "step": 16,
+              "octave": 4,
+              "velocity": 3,
+              "gate": 12,
+              "channel": 0,
+              "label": "THIRD",
+              "field": "note"
+            },
+            {
+              "notes": "GEJK",
+              "step": 16,
+              "octave": 4,
+              "velocity": 3,
+              "gate": 12,
+              "channel": 0,
+              "label": "FIFTH",
+              "field": "note"
+            }
+          ],
+          "frames": 64,
+          "loop": true,
+          "pattern": "10-calm.orca",
+          "audio": "10-calm.wav",
+          "report": {
+            "preset": "Saw Lead",
+            "peak": 0.03961181640625,
+            "duration": 10.666666666666666,
+            "sample_rate": 48000,
+            "frames": 512000,
+            "boundary_jump": 3.0517578125e-05,
+            "pre_roll_cycles": 2,
+            "pattern": "10-calm.orca",
+            "midi_events": 32,
+            "cycle_frames": 64
+          }
+        },
+        {
+          "title": "遇敌",
+          "id": "battle",
+          "tracks": [
+            {
+              "notes": "CDEGCDEGEGGJCDEG",
+              "step": 4,
+              "octave": 6,
+              "velocity": 5,
+              "gate": 2,
+              "channel": 0,
+              "label": "LEAD",
+              "field": "note"
+            },
+            {
+              "notes": "JAMN",
+              "step": 16,
+              "octave": 2,
+              "velocity": 4,
+              "gate": 10,
+              "channel": 0,
+              "label": "BASS",
+              "field": "note"
+            },
+            {
+              "notes": "JAMN",
+              "step": 16,
+              "octave": 3,
+              "velocity": 3,
+              "gate": 12,
+              "channel": 0,
+              "label": "ROOT",
+              "field": "note"
+            },
+            {
+              "notes": "ECAB",
+              "step": 16,
+              "octave": 4,
+              "velocity": 3,
+              "gate": 12,
+              "channel": 0,
+              "label": "THIRD",
+              "field": "note"
+            },
+            {
+              "notes": "GEJK",
+              "step": 16,
+              "octave": 4,
+              "velocity": 3,
+              "gate": 12,
+              "channel": 0,
+              "label": "FIFTH",
+              "field": "note"
+            },
+            {
+              "notes": "C",
+              "step": 4,
+              "octave": 3,
+              "velocity": 7,
+              "gate": 1,
+              "channel": 9,
+              "label": "KICK",
+              "field": "note"
+            },
+            {
+              "notes": ".D.D",
+              "step": 4,
+              "octave": 3,
+              "velocity": 5,
+              "gate": 1,
+              "channel": 9,
+              "label": "SNARE",
+              "field": "note"
+            },
+            {
+              "notes": "f",
+              "step": 2,
+              "octave": 3,
+              "velocity": 3,
+              "gate": 1,
+              "channel": 9,
+              "label": "HAT",
+              "field": "note"
+            }
+          ],
+          "frames": 64,
+          "loop": true,
+          "pattern": "10-battle.orca",
+          "audio": "10-battle.wav",
+          "report": {
+            "preset": "Saw Lead",
+            "peak": 0.125274658203125,
+            "duration": 10.666666666666666,
+            "sample_rate": 48000,
+            "frames": 512000,
+            "boundary_jump": 3.0517578125e-05,
+            "pre_roll_cycles": 2,
+            "pattern": "10-battle.orca",
+            "midi_events": 88,
+            "cycle_frames": 64
+          }
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "title": "导出能真正接回去的循环",
+      "page": "lessons/0011-exporting-loops.html",
+      "variants": [
+        {
+          "title": "含尾音的普通导出",
+          "id": "tail-export",
+          "tracks": [
+            {
+              "notes": "CDEGCDEGEGGJCDEG",
+              "step": 4,
+              "octave": 6,
+              "velocity": 5,
+              "gate": 2,
+              "channel": 0,
+              "label": "LEAD",
+              "field": "note"
+            },
+            {
+              "notes": "JAMN",
+              "step": 16,
+              "octave": 2,
+              "velocity": 4,
+              "gate": 10,
+              "channel": 0,
+              "label": "BASS",
+              "field": "note"
+            },
+            {
+              "notes": "JAMN",
+              "step": 16,
+              "octave": 3,
+              "velocity": 3,
+              "gate": 12,
+              "channel": 0,
+              "label": "ROOT",
+              "field": "note"
+            },
+            {
+              "notes": "ECAB",
+              "step": 16,
+              "octave": 4,
+              "velocity": 3,
+              "gate": 12,
+              "channel": 0,
+              "label": "THIRD",
+              "field": "note"
+            },
+            {
+              "notes": "GEJK",
+              "step": 16,
+              "octave": 4,
+              "velocity": 3,
+              "gate": 12,
+              "channel": 0,
+              "label": "FIFTH",
+              "field": "note"
+            }
+          ],
+          "frames": 64,
+          "loop": false,
+          "pattern": "11-tail-export.orca",
+          "audio": "11-tail-export.wav",
+          "report": {
+            "preset": "Saw Lead",
+            "peak": 0.03961181640625,
+            "duration": 12.166666666666666,
+            "sample_rate": 48000,
+            "frames": 584000,
+            "pattern": "11-tail-export.orca",
+            "midi_events": 32,
+            "cycle_frames": 64
+          }
+        },
+        {
+          "title": "定长循环导出",
+          "id": "loop-export",
+          "tracks": [
+            {
+              "notes": "CDEGCDEGEGGJCDEG",
+              "step": 4,
+              "octave": 6,
+              "velocity": 5,
+              "gate": 2,
+              "channel": 0,
+              "label": "LEAD",
+              "field": "note"
+            },
+            {
+              "notes": "JAMN",
+              "step": 16,
+              "octave": 2,
+              "velocity": 4,
+              "gate": 10,
+              "channel": 0,
+              "label": "BASS",
+              "field": "note"
+            },
+            {
+              "notes": "JAMN",
+              "step": 16,
+              "octave": 3,
+              "velocity": 3,
+              "gate": 12,
+              "channel": 0,
+              "label": "ROOT",
+              "field": "note"
+            },
+            {
+              "notes": "ECAB",
+              "step": 16,
+              "octave": 4,
+              "velocity": 3,
+              "gate": 12,
+              "channel": 0,
+              "label": "THIRD",
+              "field": "note"
+            },
+            {
+              "notes": "GEJK",
+              "step": 16,
+              "octave": 4,
+              "velocity": 3,
+              "gate": 12,
+              "channel": 0,
+              "label": "FIFTH",
+              "field": "note"
+            }
+          ],
+          "frames": 64,
+          "loop": true,
+          "pattern": "11-loop-export.orca",
+          "audio": "11-loop-export.wav",
+          "report": {
+            "preset": "Saw Lead",
+            "peak": 0.03961181640625,
+            "duration": 10.666666666666666,
+            "sample_rate": 48000,
+            "frames": 512000,
+            "boundary_jump": 3.0517578125e-05,
+            "pre_roll_cycles": 2,
+            "pattern": "11-loop-export.orca",
+            "midi_events": 32,
+            "cycle_frames": 64
+          }
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "title": "交付你的第一段游戏配乐",
+      "page": "lessons/0012-final-game-cue.html",
+      "variants": [
+        {
+          "title": "八小节探索",
+          "id": "final-calm",
+          "tracks": [
+            {
+              "notes": "CDEGEDGCCDEGGEDCEGGJBAGEDEDGEDDC",
+              "step": 4,
+              "octave": 6,
+              "velocity": 5,
+              "gate": 2,
+              "channel": 0,
+              "label": "LEAD",
+              "field": "note"
+            },
+            {
+              "notes": "JAMNJAMN",
+              "step": 16,
+              "octave": 2,
+              "velocity": 4,
+              "gate": 10,
+              "channel": 0,
+              "label": "BASS",
+              "field": "note"
+            },
+            {
+              "notes": "JAMNJAMN",
+              "step": 16,
+              "octave": 3,
+              "velocity": 3,
+              "gate": 12,
+              "channel": 0,
+              "label": "ROOT",
+              "field": "note"
+            },
+            {
+              "notes": "ECABECAB",
+              "step": 16,
+              "octave": 4,
+              "velocity": 3,
+              "gate": 12,
+              "channel": 0,
+              "label": "THIRD",
+              "field": "note"
+            },
+            {
+              "notes": "GEJKGEJK",
+              "step": 16,
+              "octave": 4,
+              "velocity": 3,
+              "gate": 12,
+              "channel": 0,
+              "label": "FIFTH",
+              "field": "note"
+            }
+          ],
+          "frames": 128,
+          "loop": true,
+          "pattern": "12-final-calm.orca",
+          "audio": "12-final-calm.wav",
+          "report": {
+            "preset": "Saw Lead",
+            "peak": 0.039276123046875,
+            "duration": 21.333333333333332,
+            "sample_rate": 48000,
+            "frames": 1024000,
+            "boundary_jump": 3.0517578125e-05,
+            "pre_roll_cycles": 2,
+            "pattern": "12-final-calm.orca",
+            "midi_events": 64,
+            "cycle_frames": 128
+          }
+        },
+        {
+          "title": "八小节遇敌",
+          "id": "final-battle",
+          "tracks": [
+            {
+              "notes": "CDEGEDGCCDEGGEDCEGGJBAGEDEDGEDDC",
+              "step": 4,
+              "octave": 6,
+              "velocity": 5,
+              "gate": 2,
+              "channel": 0,
+              "label": "LEAD",
+              "field": "note"
+            },
+            {
+              "notes": "JAMNJAMN",
+              "step": 16,
+              "octave": 2,
+              "velocity": 4,
+              "gate": 10,
+              "channel": 0,
+              "label": "BASS",
+              "field": "note"
+            },
+            {
+              "notes": "JAMNJAMN",
+              "step": 16,
+              "octave": 3,
+              "velocity": 3,
+              "gate": 12,
+              "channel": 0,
+              "label": "ROOT",
+              "field": "note"
+            },
+            {
+              "notes": "ECABECAB",
+              "step": 16,
+              "octave": 4,
+              "velocity": 3,
+              "gate": 12,
+              "channel": 0,
+              "label": "THIRD",
+              "field": "note"
+            },
+            {
+              "notes": "GEJKGEJK",
+              "step": 16,
+              "octave": 4,
+              "velocity": 3,
+              "gate": 12,
+              "channel": 0,
+              "label": "FIFTH",
+              "field": "note"
+            },
+            {
+              "notes": "C",
+              "step": 4,
+              "octave": 3,
+              "velocity": 7,
+              "gate": 1,
+              "channel": 9,
+              "label": "KICK",
+              "field": "note"
+            },
+            {
+              "notes": ".D.D",
+              "step": 4,
+              "octave": 3,
+              "velocity": 5,
+              "gate": 1,
+              "channel": 9,
+              "label": "SNARE",
+              "field": "note"
+            },
+            {
+              "notes": "f",
+              "step": 2,
+              "octave": 3,
+              "velocity": 3,
+              "gate": 1,
+              "channel": 9,
+              "label": "HAT",
+              "field": "note"
+            }
+          ],
+          "frames": 128,
+          "loop": true,
+          "pattern": "12-final-battle.orca",
+          "audio": "12-final-battle.wav",
+          "report": {
+            "preset": "Saw Lead",
+            "peak": 0.125274658203125,
+            "duration": 21.333333333333332,
+            "sample_rate": 48000,
+            "frames": 1024000,
+            "boundary_jump": 3.0517578125e-05,
+            "pre_roll_cycles": 2,
+            "pattern": "12-final-battle.orca",
+            "midi_events": 176,
+            "cycle_frames": 128
+          }
+        }
+      ]
+    }
+  ]
+}

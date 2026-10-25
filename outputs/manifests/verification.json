@@ -1,0 +1,20 @@
+{
+  "lessons": 12,
+  "reference_pages": 13,
+  "html_pages": 27,
+  "terminal_patterns_checked": 24,
+  "new_audio_previews_checked": 20,
+  "local_links": "pass",
+  "javascript_syntax": "pass",
+  "exporter_cli": "8-bar render passed; mismatched 1-bar period rejected",
+  "loop_frames_4_bars": 512000,
+  "loop_frames_8_bars": 1024000,
+  "soundfont_profile": "../assets/course-sound.json",
+  "browser_checks": [
+    "PCM preview playback",
+    "quiz feedback",
+    "shared-clock start",
+    "queued calm-to-battle transition",
+    "queued battle-to-calm transition"
+  ]
+}
