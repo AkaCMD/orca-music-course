@@ -24,7 +24,7 @@ Kind: descriptive | Audience: 中文零基础学习者 | Purpose: 完成 12 课�
 
 课程效果设置：gain 0.6、48 kHz，关闭合唱、开启轻混响，参数由共享 profile 保存。网页样本不另加合成器滤镜或包络。单音峰值约 0.053，旋律和和弦示例峰值约 0.083，离线音频未削波。三角波的旧生成器和音源文件仅保留作可回退资产，不再作为当前课程音源。用户已在回忆题中正确辨认固定 BPM 下的密度变化，见 learning-records/0002-density-and-next-step.md。音高顺序的掌握仍待第二课反馈。
 
-教材的正式位置是 /home/cmd/git-repos/orca-music-course，GitHub 目标为 AkaCMD/orca-music-course，私有。旧聊天工作区的 outputs、MISSION.md、RESOURCES.md、NOTES.md、learning-records 保留符号链接指向这里，后续编辑应使用正式仓库路径。不要在旧工作区另外生成一份教材。
+教材的正式位置是 /home/cmd/git-repos/orca-music-course，GitHub 目标为 AkaCMD/orca-music-course。仓库创建时为私有；交付核验时 GitHub API 显示公开，可见性按用户的最新选择处理，不自动改变远端设置。旧聊天工作区的 outputs、MISSION.md、RESOURCES.md、NOTES.md、learning-records 保留符号链接指向这里，后续编辑应使用正式仓库路径。不要在旧工作区另外生成一份教材。
 
 第二课使用 outputs/patterns/03-four-note-melody.orca 与 04-descending-melody.orca。终端源码验证 32 帧产生两遍 MIDI 60,62,64,67 或反向序列，间隔为 4 帧、velocity 63、duration 1。追踪器源文件为 scripts/trace_orca_notes.c。音频生成器为 scripts/render_lesson2_audio.py，共享 FluidSynth 渲染函数为 scripts/course_audio.py。四个音分别渲染，未通过移调一个样本冒充其他音高。
 
